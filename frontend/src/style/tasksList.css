@@ -1,0 +1,61 @@
+/* TasksList.css */
+
+.complete {
+	text-decoration: line-through;
+}
+
+.check-complete-text {
+	cursor: pointer;
+	color: #4473ff;
+}
+
+.check-pending-text {
+	cursor: pointer;
+	color: #368332;
+}
+
+.tasks-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	/* animation: fadeIn 1s ease-in-out; */
+}
+
+.task-card {
+	background-color: #fcfcfc;
+	border: 1px solid #ddd;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.task-card h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.task-card p {
+	font-size: 1rem;
+}
+
+.task-actions {
+	margin-top: 10px;
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.task-actions button {
+	background-color: #ff6b6b;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.task-actions button:hover {
+	background-color: #ff4646;
+}

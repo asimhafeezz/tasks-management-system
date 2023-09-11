@@ -1,0 +1,59 @@
+.App {
+	text-align: center;
+}
+
+.groups-users-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 50px;
+	align-items: center;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+/* global */
+input[type="text"],
+textarea {
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	font-size: 1rem;
+	outline: none;
+}
+
+button {
+	background-color: #ffa51f;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-top: 20px;
+}
+
+button:hover {
+	background-color: #ffb03b;
+}
+
+button:disabled {
+	background-color: #e0e0e0;
+	color: #fff;
+	cursor: not-allowed;
+}
+
+h1 {
+	color: #ffa51f;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

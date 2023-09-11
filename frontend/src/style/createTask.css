@@ -1,0 +1,35 @@
+/* CreateTaskForm.css */
+
+.create-task-card {
+	max-width: 500px;
+	margin: 20px auto;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	background-color: #fffbf4;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.create-task-card input[type="text"],
+.create-task-card textarea {
+	/* make responsive */
+	width: -webkit-fill-available;
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.create-task-card h2 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
